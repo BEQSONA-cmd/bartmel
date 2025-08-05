@@ -1,9 +1,9 @@
 import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const contactInfo = {
-    address: "123 Woodworking Street, Furniture City, Poland",
-    phone: "+48 123 456 789",
-    email: "contact@bartmel.com",
+    address: "83-240 Lubichowo , Prusa 20",
+    phone: "+48 500 072 745",
+    email: "bartmelson@gmail.com",
     facebook: "https://www.facebook.com/bartmelmanufakturameblowa/",
     instagram: "https://www.instagram.com/bartmel_stolarnia/",
 };
@@ -57,21 +57,24 @@ export default function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-start text-gray-800">
                                 <FaMapMarkerAlt className="mt-1 mr-3 flex-shrink-0" />
-                                <p>123 Woodworking Street, Furniture City, Poland</p>
+                                <p>{contactInfo.address}</p>
                             </div>
                             <div className="flex items-center text-gray-800">
                                 <FaPhone className="mr-3" />
-                                <a href="tel:+48123456789" className="text-gray-800 hover:text-amber-400 transition">
-                                    +48 123 456 789
+                                <a
+                                    href={`tel:${contactInfo.phone}`}
+                                    className="text-gray-800 hover:text-amber-400 transition"
+                                >
+                                    {contactInfo.phone}
                                 </a>
                             </div>
                             <div className="flex items-center text-gray-800">
                                 <FaEnvelope className="mr-3" />
                                 <a
-                                    href="mailto:contact@bartmel.com"
+                                    href={`mailto:${contactInfo.email}`}
                                     className="text-gray-800 hover:text-amber-400 transition"
                                 >
-                                    contact@bartmel.com
+                                    {contactInfo.email}
                                 </a>
                             </div>
                         </div>

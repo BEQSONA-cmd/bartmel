@@ -8,9 +8,8 @@ const companyInfo = {
     mission:
         "Uważnie słuchamy potrzeb naszych klientów, projektujemy, a następnie przekładamy ich wizję na meble, zabudowy i oświetlenie, które przewyższają oczekiwania.",
     hours: {
-        weekdays: "Poniedziałek - Piątek: 8:00 - 17:00",
-        saturday: "Sobota: 9:00 - 14:00",
-        sunday: "Niedziela: Zamknięte",
+        weekdays: "6:00 - 14:00",
+        weekends: "Zamknięte",
     },
     stats: [
         { value: "37+", label: "Lat doświadczenia", icon: <FaAward className="text-amber-500 text-2xl" /> },
@@ -68,7 +67,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Working Hours */}
-                <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8 shadow-sm">
+                <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl p-4 shadow-sm">
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
                         <FaCalendarAlt className="inline-block mr-2 text-amber-500" />
                         Godziny otwarcia
@@ -78,25 +77,17 @@ export default function AboutPage() {
                         <div className="flex justify-between items-center pb-4 border-b border-gray-200">
                             <div className="flex items-center">
                                 <FaClock className="text-amber-500 mr-3" />
-                                <span className="text-gray-700">Dni robocze</span>
+                                <span className="text-gray-700">Poniedziałek - Piątek</span>
                             </div>
                             <span className="font-medium text-gray-800">{companyInfo.hours.weekdays}</span>
-                        </div>
-
-                        <div className="flex justify-between items-center pb-4 border-b border-gray-200">
-                            <div className="flex items-center">
-                                <FaClock className="text-amber-500 mr-3" />
-                                <span className="text-gray-700">Sobota</span>
-                            </div>
-                            <span className="font-medium text-gray-800">{companyInfo.hours.saturday}</span>
                         </div>
 
                         <div className="flex justify-between items-center">
                             <div className="flex items-center">
                                 <FaClock className="text-amber-500 mr-3" />
-                                <span className="text-gray-700">Niedziela</span>
+                                <span className="text-gray-700">Sobota - Niedziela</span>
                             </div>
-                            <span className="font-medium text-gray-800">{companyInfo.hours.sunday}</span>
+                            <span className="font-medium text-gray-800">{companyInfo.hours.weekends}</span>
                         </div>
                     </div>
 

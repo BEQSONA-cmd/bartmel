@@ -1,9 +1,9 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const contactInfo = {
-    address: "ul. Stolarzy 123, Meblowa, Polska",
-    phone: "+48 123 456 789",
-    email: "kontakt@bartmel.com",
+    address: "83-240 Lubichowo , Prusa 20",
+    phone: "+48 500 072 745",
+    email: "bartmelson@gmail.com",
     facebook: "https://www.facebook.com/bartmelmanufakturameblowa/",
     instagram: "https://www.instagram.com/bartmel_stolarnia/",
 };

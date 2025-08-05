@@ -41,7 +41,7 @@ export const posts: Post[] = [
         pictures: ["/images/13.jpg"],
     },
     {
-        text: "Odwiedź naszą nową stronę barwickimeble.pl – realizacje, opinie i wszystko, czego potrzebujesz, by zacząć współpracę!",
+        text: "Odwiedź naszą nową stronę bartmel.com – realizacje, opinie i wszystko, czego potrzebujesz, by zacząć współpracę!",
         pictures: ["/images/17.jpg"],
     },
 ];
