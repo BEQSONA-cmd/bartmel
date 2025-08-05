@@ -5,10 +5,10 @@ import { FaBars, FaHome, FaInfoCircle, FaImage, FaEnvelope, FaTimes } from "reac
 const Logo: string = "/logo.png";
 
 const Links = [
-    { name: "Home", href: "/", icon: FaHome },
-    { name: "About", href: "/about", icon: FaInfoCircle },
-    { name: "Gallery", href: "/gallery", icon: FaImage },
-    { name: "Contact", href: "/contact", icon: FaEnvelope },
+    { name: "Strona główna", href: "/", icon: FaHome },
+    { name: "O nas", href: "/about", icon: FaInfoCircle },
+    { name: "Galeria", href: "/gallery", icon: FaImage },
+    { name: "Kontakt", href: "/contact", icon: FaEnvelope },
 ];
 
 function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
