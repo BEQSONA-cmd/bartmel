@@ -2,10 +2,12 @@ import "./globals.css";
 import { ReactNode } from "react";
 import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Template",
-    description: "Welcome to Beqa Tvildiani's personal Template",
+    title: "Bartmel Carpentry | Custom Furniture Since 1986",
+    description:
+        "Specializing in custom furniture design and manufacture since 1986. We create complete residential and office interiors with exceptional craftsmanship.",
 };
 
 interface AppProps {
@@ -14,26 +16,19 @@ interface AppProps {
 
 export default function App({ children }: AppProps) {
     return (
-        <html lang={"en"}>
-            <body>
+        <html lang="en">
+            <body className="bg-gray-50">
                 {/* Navbar */}
                 <Navbar />
 
-                {/* Main Content */}
-                <main className=" min-h-[85vh]">{children}</main>
+                {/* Main Content - Add pt-[height-of-navbar] */}
+                <main className="min-h-[85vh] pt-24 md:pt-28">{children}</main>
 
                 {/* Footer */}
-                <footer className="bg-gray-200 p-4 absolute b-0 w-full">
-                    <div className="container mx-auto text-center">
-                        <p>
-                            &copy; chxikvia.tech | Design by{" "}
-                            <a href="https://github.com/BEQSONA-cmd" className="text-blue-400">
-                                BEQSONA-cmd
-                            </a>
-                        </p>
-                    </div>
-                </footer>
-                <ToastContainer />
+                <Footer />
+
+                {/* Toast Notifications */}
+                <ToastContainer position="bottom-right" />
             </body>
         </html>
     );

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=YourFontName&display=swap");
+
+body {
+    font-family: "Lato", "Segoe UI", Arial, sans-serif;
+}
